@@ -22,7 +22,7 @@ def opened_door(doors):
 def MontyHall(switch, counter):
     win_counter = 0
     for c in range(0, counter - 1):
-        doors = [1, 0, 0]
+        doors = [1, 0, 0] # 1 for the car and 0 for the goats
         random.shuffle(doors)
         player = player_choice(doors)
         opened_door(doors)
